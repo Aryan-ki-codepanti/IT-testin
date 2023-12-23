@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Product Form</title>
+    </head>
+    <body>
+        <h1>Product Form</h1>
+        <form id="product_form">
+            <label for="pname">Product Name</label>
+            <input type="text" name="pname" id="pname" /><br />
+
+            <label for="ptype">Product type</label>
+            <br />
+            <input
+                type="radio"
+                name="ptype"
+                id="electronics"
+                value="Electronics"
+            />Electronics<br />
+            <input
+                type="radio"
+                name="ptype"
+                id="sanitary"
+                value="sanitary"
+            />Sanitary<br />
+
+            <label for="price">Price</label>
+            <input type="range" min="1" max="100000" name="price" id="price" />
+            <span id="price_val"></span>
+            <br />
+
+            <label for="warranty">Warranty</label>
+            <br />
+            <input type="radio" name="warranty" value="1" />1<br />
+            <input type="radio" name="warranty" value="2" />2<br />
+            <input type="submit" value="Submit" />
+            <br />
+        </form>
+        <p id="message"></p>
+        <script src="js/2018.js"></script>
+    </body>
+</html>
